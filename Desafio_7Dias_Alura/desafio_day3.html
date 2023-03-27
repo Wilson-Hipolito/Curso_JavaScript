@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando JavaScript</title>
+</head>
+<body>
+    <p>Desafio 7Days Alura - Day 3 - Perguntas e Respostas.</p>
+    <script>
+        const ramo = prompt("Bem vindo programador, qual ramo da TI você tem interesse em seguir?, Front-End ou Back-End?");
+            if (ramo === "Front-End"){
+                const front = prompt("Por qual linguagem gostaria de começar em Front-End?, React ou Vue?");
+            }
+            else {
+                const back = prompt("Por qual linguagem gostaria de começar em Back-End?, C# ou Java?");
+            };
+        const futuro_carreira = prompt("Agora gostaria de seguir se especializando no ramo escolhido ou gostaria de seguir a carreira Fullstack?, Se quiser seguir o ramo escolhido digite (1), se quiser seguir a carreira Fullstack digite (2).");
+            if (futuro_carreira == 1){
+                alert(`Que legal! Quer se especializar em ${ramo}.`);
+            }
+            else {
+                alert("Muito bom! Quer se tornar um Fullstack, boa sorte na jornada de aprendizado.");
+            };
+        const linguagem = prompt("Tem mais alguma tecnologia que gostaria de aprender?");
+            while (linguagem == "Sim"){
+                const outra_linguagem = prompt("Qual é a tecnologia que gostaria de aprender ou conhecer?");
+                alert(`Muito legal a tecnologia ${outra_linguagem}, ela é muito importante no mundo da TI.`);
+            };
+        alert("Muito obrigado por participar dessa pesquisa.");
+    </script>
+</body>
+</html>
