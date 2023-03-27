@@ -9,24 +9,33 @@
 <body>
     <p>Desafio 7Days Alura - Day 3 - Perguntas e Respostas.</p>
     <script>
-        const ramo = prompt("Bem vindo programador, qual ramo da TI você tem interesse em seguir?, Front-End ou Back-End?");
-            if (ramo === "Front-End"){
-                const front = prompt("Por qual linguagem gostaria de começar em Front-End?, React ou Vue?");
+        const area = prompt("Bem vindo programador, qual ramo da TI você tem interesse em seguir?, Front-End ou Back-End?");
+        var linguagem = "";
+            if (area === "Front-End"){
+                linguagem = prompt("Por qual linguagem gostaria de começar em Front-End?, React ou Vue?");
+            }
+            else if (area === "Back-End"){
+                linguagem = prompt("Por qual linguagem gostaria de começar em Back-End?, C# ou Java?");
             }
             else {
-                const back = prompt("Por qual linguagem gostaria de começar em Back-End?, C# ou Java?");
+                alert ("Você não inseriu uma área válida!!!");
             };
         const futuro_carreira = prompt("Agora gostaria de seguir se especializando no ramo escolhido ou gostaria de seguir a carreira Fullstack?, Se quiser seguir o ramo escolhido digite (1), se quiser seguir a carreira Fullstack digite (2).");
             if (futuro_carreira == 1){
-                alert(`Que legal! Quer se especializar em ${ramo}.`);
+                alert(`Que legal! continue estudando ${linguagem}, para se especializar em ${area}.`);
+            }
+            else if (futuro_carreira == 2){
+                alert(`Muito bom! Se você quer se tornar um Fullstack, vai precisar saber mais além de ${linguagem}`);
             }
             else {
-                alert("Muito bom! Quer se tornar um Fullstack, boa sorte na jornada de aprendizado.");
+                alert("Você não inseriu um valor válido!!!");
             };
-        const linguagem = prompt("Tem mais alguma tecnologia que gostaria de aprender?");
-            while (linguagem == "Sim"){
-                const outra_linguagem = prompt("Qual é a tecnologia que gostaria de aprender ou conhecer?");
+
+        let msg = prompt("Tem mais alguma tecnologia que gostaria de aprender?");
+            while (msg === "Sim"){
+                let outra_linguagem = prompt("Qual é a tecnologia que gostaria de aprender ou conhecer?");
                 alert(`Muito legal a tecnologia ${outra_linguagem}, ela é muito importante no mundo da TI.`);
+                msg = prompt("Tem mais alguma tecnologia que gostaria de aprender?");
             };
         alert("Muito obrigado por participar dessa pesquisa.");
     </script>
